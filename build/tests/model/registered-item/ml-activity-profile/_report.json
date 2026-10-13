@@ -1,0 +1,337 @@
+{
+  "title": "Validation report for ogc.model.registered-item.ml-activity-profile - ML Activity Types Profile",
+  "bblockName": "ML Activity Types Profile",
+  "bblockId": "ogc.model.registered-item.ml-activity-profile",
+  "generated": "2026-10-07T06:38:42.649898+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/model/registered-item/ml-activity-profile/example_1_1.ttl",
+        "url": "https://ogcincubator.github.io/registered-item-model/build/tests/model/registered-item/ml-activity-profile/example_1_1.ttl",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 57,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mlact, rim, mlm, stac, prov, dct, xsd, acttype, geoproc, p-plan, rdfs, owl, ex"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Error processing closure source skos.ttl: [Errno 2] No such file or directory: '/github/skos.ttl' - SHACL validation will run against an incomplete closure graph"
+            },
+            {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/ml-activity-profile/ontology.ttl\n - https://ogcincubator.github.io/bblocks-stac/build/annotated/contrib/stac/extensions/mlm-ontology/ontology.ttl"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/ml-activity-profile/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/ml-activity-profile/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/ml-activity-profile/shapes.shacl",
+              "focusNodes": {
+                "mlact:ActivityOutputShape": {
+                  "nodes": [
+                    "ex:predictedMask"
+                  ]
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b47": {
+                  "nodes": []
+                },
+                "mlact:MLActivityShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b46": {
+                  "nodes": []
+                },
+                "mlact:MLActivityTypeShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b55": {
+                  "nodes": []
+                },
+                "mlact:MLActivityTypesShape": {
+                  "nodes": [
+                    "mlact:MLActivity"
+                  ]
+                },
+                "mlact:InferenceActivityTypeShape": {
+                  "nodes": []
+                },
+                "mlact:MLActivityTypesShape/sh:property/sh:node": {
+                  "nodes": []
+                },
+                "mlact:InferenceActivityTypesShape/sh:property/sh:node": {
+                  "nodes": []
+                },
+                "mlact:InferenceActivityTypesShape": {
+                  "nodes": [
+                    "mlact:InferenceActivity"
+                  ]
+                },
+                "mlact:MLActivityTypeShape/sh:property/sh:qualifiedValueShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b54": {
+                  "nodes": []
+                },
+                "mlact:InferenceActivityTypeShape/sh:property/sh:qualifiedValueShape": {
+                  "nodes": []
+                },
+                "mlact:ActivityInputShape": {
+                  "nodes": [
+                    "ex:sceneChip"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/ml-activity-profile/shapes.shacl:\n - Shape mlact:ActivityOutputShape: ex:predictedMask\n - Shape _:n93bc424c423547f686ab04c25c7fb038b47: *none*\n - Shape mlact:MLActivityShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b46: *none*\n - Shape mlact:MLActivityTypeShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b55: *none*\n - Shape mlact:MLActivityTypesShape: mlact:MLActivity\n - Shape mlact:InferenceActivityTypeShape: *none*\n - Shape mlact:MLActivityTypesShape/sh:property/sh:node: *none*\n - Shape mlact:InferenceActivityTypesShape/sh:property/sh:node: *none*\n - Shape mlact:InferenceActivityTypesShape: mlact:InferenceActivity\n - Shape mlact:MLActivityTypeShape/sh:property/sh:qualifiedValueShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b54: *none*\n - Shape mlact:InferenceActivityTypeShape/sh:property/sh:qualifiedValueShape: *none*\n - Shape mlact:ActivityInputShape: ex:sceneChip\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl",
+              "focusNodes": {
+                "mlm:InputStructureShape": {
+                  "nodes": [
+                    "ex:landCoverInputStructure"
+                  ]
+                },
+                "mlm:ValueScalingShape": {
+                  "nodes": []
+                },
+                "mlm:AcceleratorShape": {
+                  "nodes": []
+                },
+                "mlm:ResultStructureShape": {
+                  "nodes": [
+                    "ex:landCoverResultStructure"
+                  ]
+                },
+                "mlm:ModelOutputShape": {
+                  "nodes": [
+                    "ex:landCoverOutputSpec"
+                  ]
+                },
+                "mlm:ModelRootShape": {
+                  "nodes": [
+                    "ex:landCoverModel"
+                  ]
+                },
+                "mlm:ModelInputShape": {
+                  "nodes": [
+                    "ex:landCoverInputSpec"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl:\n - Shape mlm:InputStructureShape: ex:landCoverInputStructure\n - Shape mlm:ValueScalingShape: *none*\n - Shape mlm:AcceleratorShape: *none*\n - Shape mlm:ResultStructureShape: ex:landCoverResultStructure\n - Shape mlm:ModelOutputShape: ex:landCoverOutputSpec\n - Shape mlm:ModelRootShape: ex:landCoverModel\n - Shape mlm:ModelInputShape: ex:landCoverInputSpec\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "build/tests/model/registered-item/ml-activity-profile/example_2_1.ttl",
+        "url": "https://ogcincubator.github.io/registered-item-model/build/tests/model/registered-item/ml-activity-profile/example_2_1.ttl",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "text/turtle"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.ttl from examples"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 35,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Prefixes are defined for mlact, rim, mlm, stac, prov, dct, xsd, acttype, geoproc, p-plan, rdfs, owl, ex"
+            }
+          ]
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Error processing closure source skos.ttl: [Errno 2] No such file or directory: '/github/skos.ttl' - SHACL validation will run against an incomplete closure graph"
+            },
+            {
+              "isError": false,
+              "message": "Using SHACL closure graph sources (declared closures, ontologies and RDF data resources):\n - /github/workspace/_sources/ml-activity-profile/ontology.ttl\n - https://ogcincubator.github.io/bblocks-stac/build/annotated/contrib/stac/extensions/mlm-ontology/ontology.ttl"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "_sources/ml-activity-profile/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for _sources/ml-activity-profile/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "_sources/ml-activity-profile/shapes.shacl",
+              "focusNodes": {
+                "mlact:ActivityOutputShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b47": {
+                  "nodes": []
+                },
+                "mlact:MLActivityShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b46": {
+                  "nodes": []
+                },
+                "mlact:MLActivityTypeShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b55": {
+                  "nodes": []
+                },
+                "mlact:MLActivityTypesShape": {
+                  "nodes": [
+                    "mlact:MLActivity"
+                  ]
+                },
+                "mlact:InferenceActivityTypeShape": {
+                  "nodes": []
+                },
+                "mlact:MLActivityTypesShape/sh:property/sh:node": {
+                  "nodes": []
+                },
+                "mlact:InferenceActivityTypesShape/sh:property/sh:node": {
+                  "nodes": []
+                },
+                "mlact:InferenceActivityTypesShape": {
+                  "nodes": [
+                    "mlact:InferenceActivity"
+                  ]
+                },
+                "mlact:MLActivityTypeShape/sh:property/sh:qualifiedValueShape": {
+                  "nodes": []
+                },
+                "_:n93bc424c423547f686ab04c25c7fb038b54": {
+                  "nodes": []
+                },
+                "mlact:InferenceActivityTypeShape/sh:property/sh:qualifiedValueShape": {
+                  "nodes": []
+                },
+                "mlact:ActivityInputShape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for _sources/ml-activity-profile/shapes.shacl:\n - Shape mlact:ActivityOutputShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b47: *none*\n - Shape mlact:MLActivityShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b46: *none*\n - Shape mlact:MLActivityTypeShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b55: *none*\n - Shape mlact:MLActivityTypesShape: mlact:MLActivity\n - Shape mlact:InferenceActivityTypeShape: *none*\n - Shape mlact:MLActivityTypesShape/sh:property/sh:node: *none*\n - Shape mlact:InferenceActivityTypesShape/sh:property/sh:node: *none*\n - Shape mlact:InferenceActivityTypesShape: mlact:InferenceActivity\n - Shape mlact:MLActivityTypeShape/sh:property/sh:qualifiedValueShape: *none*\n - Shape _:n93bc424c423547f686ab04c25c7fb038b54: *none*\n - Shape mlact:InferenceActivityTypeShape/sh:property/sh:qualifiedValueShape: *none*\n - Shape mlact:ActivityInputShape: *none*\n"
+            },
+            {
+              "op": "shacl-report",
+              "shaclFile": "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl",
+              "focusNodes": {
+                "mlm:InputStructureShape": {
+                  "nodes": []
+                },
+                "mlm:ValueScalingShape": {
+                  "nodes": []
+                },
+                "mlm:AcceleratorShape": {
+                  "nodes": []
+                },
+                "mlm:ResultStructureShape": {
+                  "nodes": []
+                },
+                "mlm:ModelOutputShape": {
+                  "nodes": []
+                },
+                "mlm:ModelRootShape": {
+                  "nodes": []
+                },
+                "mlm:ModelInputShape": {
+                  "nodes": []
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for https://ogcincubator.github.io/bblocks-stac/_sources/extensions/mlm-ontology/shapes.shacl:\n - Shape mlm:InputStructureShape: *none*\n - Shape mlm:ValueScalingShape: *none*\n - Shape mlm:AcceleratorShape: *none*\n - Shape mlm:ResultStructureShape: *none*\n - Shape mlm:ModelOutputShape: *none*\n - Shape mlm:ModelRootShape: *none*\n - Shape mlm:ModelInputShape: *none*\n"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  }
+}

@@ -2,45 +2,29 @@
   "title": "Validation report for ogc.model.registered-item.rim.register-action - Register Action",
   "bblockName": "Register Action",
   "bblockId": "ogc.model.registered-item.rim.register-action",
-  "generated": "2026-10-07T07:03:01.999090+00:00",
-  "result": true,
+  "generated": "2026-10-07T06:38:42.684854+00:00",
+  "result": false,
   "items": [
     {
       "source": {
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/model/registered-item/rim/register-action/example_1_1.ttl",
+        "url": "https://ogcincubator.github.io/registered-item-model/build/tests/model/registered-item/rim/register-action/example_1_1.ttl",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "text/turtle"
       },
-      "result": true,
+      "result": false,
       "sections": [
-        {
-          "name": "FILES",
-          "title": "Files",
-          "entries": [
-            {
-              "isError": false,
-              "message": "Using examples/example.ttl from examples"
-            },
-            {
-              "op": "ttl-create",
-              "empty": false,
-              "filename": "example_1_1.ttl",
-              "size": 6,
-              "isError": false,
-              "message": "Output Turtle example_1_1.ttl created"
-            }
-          ]
-        },
         {
           "name": "TURTLE",
           "title": "Turtle",
           "entries": [
             {
-              "isError": false,
-              "message": "Prefixes are defined for xsd"
+              "exception": "BadSyntax",
+              "isError": true,
+              "message": "at line 8 of <>:\nBad syntax (Prefix \"xsd:\" not bound) at ^ in:\n\"...b'ppliesTo ex:i;\\n  prov:startedAtTime \"2026-09-25T10:00:00Z\"^^'^b'xsd:dateTime.\\n\\nex:addition a rim:RegisterActionType.\\nex:i a '...\""
             }
           ]
         }
@@ -50,7 +34,7 @@
   "globalErrors": {},
   "counts": {
     "total": 1,
-    "passed": 1,
-    "failed": 0
+    "passed": 0,
+    "failed": 1
   }
 }

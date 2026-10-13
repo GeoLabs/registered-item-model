@@ -33,7 +33,7 @@ model describes the former, independent of the latter.
 
 **Type:** model
 
-A profile of the Registered Item Model for governed activity type records in the acttype:ActivityType hierarchy, with related PROV object types and an optional plan.
+A profile of the Registered Item Model for registers whose items are types of prov:Activity, each able to declare the types of PROV entities, agents and activities it relates to and an optional prov:Plan of required steps.
 
 ### `ogc.model.registered-item.rim.concept-version` — Concept Version
 
@@ -53,13 +53,13 @@ Modular RDF implementation profile based on ISO/FDIS 19135:2026.
 
 A base RDF and SHACL model for register items, register item classes and register governance metadata, based on ISO 19135:2026.
 
-### `ogc.model.registered-item.geoprocessing-activity-types` — Geoprocessing Activity Types Profile
+### `ogc.model.registered-item.geoprocessing-activity-type` — Geoprocessing Activity Types Profile
 
 **Type:** model
 
-A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivityType, each required to use or generate at least one GeoSPARQL spatial data type.
+A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivity, each required to use or generate at least one GeoSPARQL spatial data type.
 
-### `ogc.model.registered-item.ml-activity-types` — ML Activity Types Profile
+### `ogc.model.registered-item.ml-activity-profile` — ML Activity Types Profile
 
 **Type:** model
 
