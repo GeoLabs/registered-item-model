@@ -9,8 +9,8 @@
   "itemClass": "schema",
   "version": "0.2",
   "dependsOn": [
-    "ogc.model.registered-item.rim.register",
-    "ogc.model.registered-item.rim.concept-version"
+    "ogc.model.registered-item.rim.concept-version",
+    "ogc.model.registered-item.rim.register"
   ],
   "shaclShapes": {},
   "ldContext": "https://ogcincubator.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/context.jsonld",

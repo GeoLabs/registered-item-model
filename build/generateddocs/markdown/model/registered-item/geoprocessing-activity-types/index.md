@@ -1,9 +1,9 @@
 
 # Geoprocessing Activity Types Profile (Model)
 
-`ogc.model.registered-item.geoprocessing-activity-type` *v0.1*
+`ogc.model.registered-item.geoprocessing-activity-types` *v0.1*
 
-A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivity, each required to use or generate at least one GeoSPARQL spatial data type.
+A profile of the Activity Type Register Profile for geoprocessing activity types: registered sub-classes of geoproc:GeoprocessingActivityType, each required to use or generate at least one GeoSPARQL spatial data type.
 
 [*Status*](http://www.opengis.net/def/status): Under development
 
@@ -11,7 +11,7 @@ A profile of the Activity Type Register Profile for geoprocessing activity types
 
 ### A registered NDVI computation activity type
 An Earth observation processing register governs the geoprocessing activity types its
-pipelines run. "NDVI computation" specialises `geoproc:GeoprocessingActivity`. It uses a
+pipelines run. "NDVI computation" specialises `geoproc:GeoprocessingActivityType`. It uses a
 multispectral scene and generates an NDVI raster, both sub-classes of `geo:Feature`, which
 satisfies the profile's requirement for at least one spatial used or generated entity type.
 Its plan lists the three steps every NDVI computation must perform, in order.
@@ -22,7 +22,7 @@ ex:eoProcessingRegister a rim:Register ;
     dct:title "EO Processing Activity Types" .
 
 ex:NdviComputation a acttype:ActivityType , owl:Class ;
-    rdfs:subClassOf geoproc:GeoprocessingActivity ;
+    rdfs:subClassOf geoproc:GeoprocessingActivityType ;
     rdfs:label "NDVI computation" ;
     dct:title "NDVI computation" ;
     dct:description "Computes the Normalized Difference Vegetation Index from the red and near-infrared bands of a multispectral scene." ;
@@ -73,5 +73,5 @@ ex:computeIndex a p-plan:Step ;
 The source code for this Building Block can be found in the following repository:
 
 * URL: [https://github.com/ogcincubator/registered-item-model](https://github.com/ogcincubator/registered-item-model)
-* Path: `_sources/geoprocessing-activity-type`
+* Path: `_sources/geoprocessing-activity-types`
 
