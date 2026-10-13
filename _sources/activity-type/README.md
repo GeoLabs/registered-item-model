@@ -1,19 +1,18 @@
 # Activity Type Register Profile
 
-A profile of the [Registered Item Model](../core-ontology) for registers whose items are **types
-of `prov:Activity`**: kinds of activity such as a quality review, a reprojection or a model
+A profile of the [Registered Item Model](../core-ontology) for registers whose items are **registered activity types**: kinds of activity such as a quality review, a reprojection or a model
 inference run, governed with the same identifiers, statuses and change history as any other
 register item.
 
 ## What it adds
 
-- **`acttype:ActivityType`**: a sub-class of `rim:RegisterItem` whose instances are classes, each
-  declared `rdfs:subClassOf prov:Activity` (directly or through other registered activity types).
-  The register item and the type are one resource, so an individual activity is declared with
-  `rdf:type` pointing straight at the governed register item.
+- **`acttype:ActivityType`**: a subclass of `rim:RegisterItem`. Specific activity type classes
+  specialise this root. Registered types can be declared as classes and used to type individual
+  activities. Those activities also inherit the register item requirements, so they need their
+  own identifiers, statuses and `acttype:activityTypeItemClass`.
 - **A narrowed `rim:itemClass` domain**: the register item class `acttype:activityTypeItemClass`,
-  plus SHACL in both directions. Every `acttype:ActivityType` must use that item class and be a
-  sub-class of `prov:Activity`. Every register item using that item class must be an
+  plus SHACL in both directions. Every activity type record must use that item class and belong
+  to the `acttype:ActivityType` hierarchy through its `rdf:type`. Every register item using that item class must be an
   `acttype:ActivityType`.
 - **Related PROV object types**: type-level counterparts of the PROV relations:
   `acttype:usedEntityType` (`prov:used`), `acttype:generatedEntityType` (`prov:generated`),
@@ -27,12 +26,12 @@ register item.
 
 ## Profiling this block further
 
-A further profile, such as [Geoprocessing Activity](../geoprocessing-activity), typically:
+A further profile, such as [Geoprocessing Activity Types](../geoprocessing-activity-types), typically:
 
-1. declares a root activity class (for example `geoproc:GeoprocessingActivity rdfs:subClassOf
-   prov:Activity`) that its registered types specialise;
+1. declares a root activity class (for example `geoproc:GeoprocessingActivityType rdfs:subClassOf
+   acttype:ActivityType`) that its registered types specialise;
 2. constrains the related types that those registered types must declare, with a shape targeting
-   every sub-class of the root that is also a registered `acttype:ActivityType`:
+   every subclass of the root that is also a registered `acttype:ActivityType`:
 
 ```turtle
 ex:MyRootTypesShape a sh:NodeShape ;
@@ -44,10 +43,10 @@ ex:MyRootTypesShape a sh:NodeShape ;
     ] .
 ```
 
-The `sh:not` branch skips sub-classes that are only declared in an ontology and are not being
+The `sh:not` branch skips subclasses that are only declared in an ontology and are not being
 registered. `ex:MyActivityTypeConstraints` then constrains `acttype:usedEntityType`,
 `acttype:generatedEntityType` and similar properties, for example with `sh:qualifiedValueShape`
 over an `rdfs:subClassOf*` path.
 
-Each constraining profile can itself be profiled: a sub-type's shapes add to its parent's and never
+Each constraining profile can itself be profiled: a subtype's shapes add to its parent's and never
 replace them.
