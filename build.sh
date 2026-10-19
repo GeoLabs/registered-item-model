@@ -12,3 +12,4 @@ fi
 docker run -it --pull=always --rm --workdir /workspace -v "$(pwd):/workspace" ${VOLUMES} \
   ghcr.io/opengeospatial/bblocks-postprocess:${BBP_IMAGE_TAG:-latest} \
   --clean true --base-url http://localhost:9090/register/ "$@"
+  
