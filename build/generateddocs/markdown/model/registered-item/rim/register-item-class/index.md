@@ -3,7 +3,7 @@
 
 `ogc.model.registered-item.rim.register-item-class` *v0.2*
 
-Modular RDF implementation profile based on ISO/FDIS 19135:2026.
+A REGISTER ITEM CLASS model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. (describes the type of object in a register) Modular Building Block to support interoperable profiles of register
 
 [*Status*](http://www.opengis.net/def/status): Under development
 

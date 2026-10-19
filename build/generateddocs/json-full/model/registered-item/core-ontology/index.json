@@ -4,13 +4,13 @@
   "itemIdentifier": "ogc.model.registered-item.core-ontology",
   "name": "Registered Item Model",
   "highlighted": true,
+  "group": "Core Model",
   "title": "Base RDF/OWL and SHACL model for register items and register governance",
   "abstract": "A base RDF and SHACL model for register items, register item classes and register governance metadata, based on ISO 19135:2026.",
   "description": "A register is a catalogue distinguished from a plain dataset by systematic governance: a content information model (register item classes and register items) plus management metadata (identifiers, statuses, actions, roles). ISO 19135:2026 defines one such model, separating a concept plane (meaning) from a content plane (representation) and adding roles, statuses, actions, relations and commitments on top. This block publishes that model as a single base building block so that many registers with different native schemas \u2014 a CSV catalogue, the OGC Definitions Server, a GitHub-managed vocabulary, or a Building Blocks register itself \u2014 can each map their own fields onto it via a JSON-LD context, and be queried as one graph. Sub-registers are expected to profile this block (null, additive or constrained) rather than invent their own register model.",
   "status": "under-development",
   "version": "0.1",
   "itemClass": "model",
-  "group": "Core Model",
   "dependsOn": [
     "ogc.model.cross-domain.prov"
   ],
@@ -42,7 +42,7 @@
     "metadata"
   ],
   "dateTimeAddition": "2026-09-17T00:00:00Z",
-  "dateOfLastChange": "2026-10-13",
+  "dateOfLastChange": "2026-10-19",
   "ontology": "https://ogcincubator.github.io/registered-item-model/build/annotated/model/registered-item/core-ontology/ontology.ttl",
   "sourceFiles": "https://ogcincubator.github.io/registered-item-model/_sources/core-ontology/",
   "validationPassed": true,

@@ -45,7 +45,7 @@ Modular RDF implementation profile based on ISO/FDIS 19135:2026.
 
 **Type:** schema
 
-Modular RDF implementation profile based on ISO/FDIS 19135:2026.
+A REGISTER description model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. Modular Building Block to support interoperable profiles of register
 
 ### `ogc.model.registered-item.core-ontology` — Registered Item Model
 
@@ -69,7 +69,7 @@ A profile of the Geoprocessing Activity Types Profile describing machine learnin
 
 **Type:** schema
 
-Modular RDF implementation profile based on ISO/FDIS 19135:2026.
+A REGISTER ITEM CLASS model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. (describes the type of object in a register) Modular Building Block to support interoperable profiles of register
 
 ### `ogc.model.registered-item.rim.register-specification` — Register Specification
 
@@ -81,11 +81,11 @@ Modular RDF implementation profile based on ISO/FDIS 19135:2026.
 
 **Type:** schema
 
-Modular RDF implementation profile based on ISO/FDIS 19135:2026.
+A REGISTER ITEM model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. This provides a canonical schema for a register entry, that can be extended according the REGISTER ITEM CLASS defined for the register.
 
 ### `ogc.model.registered-item.rim.register-action` — Register Action
 
 **Type:** schema
 
-Modular RDF implementation profile based on ISO/FDIS 19135:2026.
+A REGISTER interaction activity model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. Modular Building Block to support interoperable profiles of register
 
