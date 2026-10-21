@@ -204,6 +204,16 @@ rim:realizes a owl:ObjectProperty ;
     rdfs:isDefinedBy ont: ;
     rdfs:range rim:ConceptVersion .
 
+rim:isRealizedBy
+ a owl:ObjectProperty ;
+    skos:prefLabel "realizes"@en ;
+    skos:definition "Relates a concept version to the register item in the content plane that represents it. Inverse of realizes"@en ;
+    rdfs:domain rim:ConceptVersion ;
+    rdfs:isDefinedBy ont: ;
+    rdfs:range rim:RegisterItem ;
+    skos:historyNote "The predicate was defined by the OGC to allow Registered Items to appear in multiple registers by a qualified relations pattern via Concept Version" ;
+    owl:inverseOf rim:realizes .
+
 rim:redactionAction a skos:Concept,
         rim:RegisterActionType ;
     skos:definition "Content is removed from a register item for legal or privacy reasons, while the record of the item is retained."@en ;
