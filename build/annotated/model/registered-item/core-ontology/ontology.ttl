@@ -118,6 +118,7 @@ rim:hasSpecification a owl:ObjectProperty ;
 
 rim:inRegister a owl:ObjectProperty ;
     skos:prefLabel "in register"@en ;
+    skos:altLabel "belongs to"@en ;
     skos:definition "Relates a register item to the register that holds it."@en ;
     rdfs:domain rim:RegisterItem ;
     rdfs:isDefinedBy ont: ;
@@ -400,6 +401,7 @@ rim:CommitmentCategory a owl:Class ;
 
 rim:RegisterAction a owl:Class ;
     skos:prefLabel "Register action"@en ;
+    skos:altLabel "Change"@en ;
     skos:definition "A defined, recorded way in which register content changes. Every decision — automated or human — produces a retained record: who or what decided, under which rule set version, when, and on what justification."@en ;
     rdfs:isDefinedBy ont: ;
     rdfs:subClassOf prov:Activity .
