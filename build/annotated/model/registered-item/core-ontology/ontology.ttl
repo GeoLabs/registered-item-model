@@ -119,8 +119,8 @@ rim:hasSpecification a owl:ObjectProperty ;
 rim:inRegister a owl:ObjectProperty ;
     skos:prefLabel "in register"@en ;
     skos:altLabel "belongs to"@en ;
-    skos:definition "Relates a register item to the register that holds it."@en ;
-    rdfs:domain rim:RegisterItem ;
+    skos:definition "Relates a register item or a concept version to a register that holds it."@en ;
+    rdfs:domain [ owl:unionOf ( rim:RegisterItem rim:ConceptVersion ) ] ;
     rdfs:isDefinedBy ont: ;
     rdfs:range rim:Register .
 
