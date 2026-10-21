@@ -204,8 +204,7 @@ rim:realizes a owl:ObjectProperty ;
     rdfs:isDefinedBy ont: ;
     rdfs:range rim:ConceptVersion .
 
-rim:isRealizedBy
- a owl:ObjectProperty ;
+rim:isRealizedBy a owl:ObjectProperty ;
     skos:prefLabel "realizes"@en ;
     skos:definition "Relates a concept version to the register item in the content plane that represents it. Inverse of realizes"@en ;
     rdfs:domain rim:ConceptVersion ;
