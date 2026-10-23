@@ -109,7 +109,7 @@ x-jsonld-prefixes:
   prov: http://www.w3.org/ns/prov#
 x-bblocks-metadata:
   itemIdentifier: ogc.model.registered-item.rim.register-item-class
-  register: https://ogcincubator.github.io/registered-item-model/build/register.json
+  register: https://nielshoffmann.github.io/registered-item-model/build/register.json
   version: '0.2'
   dateOfLastChange: '2026-09-25'
 
@@ -117,8 +117,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://ogcincubator.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.json)
-* JSON version: [schema.json](https://ogcincubator.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.yaml)
+* YAML version: [schema.yaml](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.json)
+* JSON version: [schema.json](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/schema.yaml)
 
 
 # JSON-LD Context
@@ -138,13 +138,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://ogcincubator.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/context.jsonld)
+[context.jsonld](https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-item-class/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/ogcincubator/registered-item-model](https://github.com/ogcincubator/registered-item-model)
+* URL: [https://github.com/NielsHoffmann/registered-item-model](https://github.com/NielsHoffmann/registered-item-model)
 * Path: `_sources/rim/register-item-class`
 
