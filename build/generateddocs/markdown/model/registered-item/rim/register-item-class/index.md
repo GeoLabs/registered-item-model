@@ -66,6 +66,7 @@ This block represents the content-plane abstraction used to define coherent requ
 ### Valid ISO 19135 Register Item Class example
 #### turtle
 ```turtle
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix rim: <https://w3id.org/ogc/rim/>.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix ex: <https://example.org/rim/>.
@@ -79,7 +80,10 @@ ex:uc a rim:RegisterItemClass;
   rim:validatedBy <https://example.org/rules/unit>.
 
 ex:r a rim:Register.
-ex:c a rim:Concept.
+
+ex:c a rim:Concept ;
+  skos:prefLabel "metre"@en
+.
 
 
 ```

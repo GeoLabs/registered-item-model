@@ -10,8 +10,15 @@
   "dateTimeAddition": "2026-09-25T00:00:00Z",
   "itemClass": "schema",
   "version": "0.2",
-  "shaclShapes": {},
-  "dateOfLastChange": "2026-10-21",
+  "dependsOn": [
+    "ogc.model.registered-item.core-ontology"
+  ],
+  "shaclShapes": {
+    "ogc.model.registered-item.core-ontology": [
+      "https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+    ]
+  },
+  "dateOfLastChange": "2026-10-23",
   "ldContext": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/context.jsonld",
   "ontology": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register/ontology.ttl",
   "schema": {

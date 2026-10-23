@@ -11,18 +11,9 @@
   "status": "under-development",
   "version": "0.1",
   "itemClass": "model",
-  "dependsOn": [
-    "ogc.model.cross-domain.prov"
-  ],
-  "concept": [
-    "https://w3id.org/ogc/rim/RegisterItem"
-  ],
   "shaclShapes": {
     "ogc.model.registered-item.core-ontology": [
       "https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
-    ],
-    "ogc.model.cross-domain.prov": [
-      "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
     ]
   },
   "sources": [
@@ -42,7 +33,7 @@
     "metadata"
   ],
   "dateTimeAddition": "2026-09-17T00:00:00Z",
-  "dateOfLastChange": "2026-10-21",
+  "dateOfLastChange": "2026-10-23",
   "ontology": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/core-ontology/ontology.ttl",
   "sourceFiles": "https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/",
   "validationPassed": true,

@@ -8,8 +8,15 @@
   "dateTimeAddition": "2026-09-25T00:00:00Z",
   "itemClass": "schema",
   "version": "0.2",
-  "shaclShapes": {},
-  "dateOfLastChange": "2026-10-21",
+  "dependsOn": [
+    "ogc.model.registered-item.core-ontology"
+  ],
+  "shaclShapes": {
+    "ogc.model.registered-item.core-ontology": [
+      "https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+    ]
+  },
+  "dateOfLastChange": "2026-10-23",
   "ldContext": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/context.jsonld",
   "ontology": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/concept-version/ontology.ttl",
   "schema": {
@@ -31,8 +38,8 @@
           "language": "turtle",
           "ref": "https://nielshoffmann.github.io/registered-item-model/_sources/rim/concept-version/examples/example.ttl",
           "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/rim/concept-version/example_1_1.ttl",
-          "sizeBytes": 540,
-          "code": "\n@prefix rim: <https://w3id.org/ogc/rim/>.\n@prefix skos: <http://www.w3.org/2004/02/skos/core#>.\n@prefix ex: <https://example.org/rim/>.\n\nex:c a rim:Concept;\n  skos:prefLabel \"metre\"@en.\n\nex:cv a rim:ConceptVersion;\n  rim:versionOf ex:c;\n  rim:version \"1.0\";\n  rim:objectIdentifier <urn:uuid:22222222-2222-4222-8222-222222222222>;\n  rim:functionalIdentifier <https://example.org/concepts/metre/1.0>;\n  rim:validityStatus ex:valid;\n  rim:publicationStatus ex:published.\n\nex:valid a rim:ValidityStatus.\nex:published a rim:PublicationStatus.\n\n"
+          "sizeBytes": 615,
+          "code": "\n@prefix rim: <https://w3id.org/ogc/rim/>.\n@prefix skos: <http://www.w3.org/2004/02/skos/core#>.\n@prefix ex: <https://example.org/rim/>.\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n\nex:c a rim:Concept;\n  skos:prefLabel \"metre\"@en.\n\nex:cv a rim:ConceptVersion;\n  rim:versionOf ex:c;\n  rim:version \"1.0\";\n  rim:objectIdentifier \"urn:uuid:22222222-2222-4222-8222-222222222222\"^^xsd:anyURI;\n  rim:functionalIdentifier \"https://example.org/concepts/metre/1.0\"^^xsd:anyURI;\n  rim:validityStatus ex:valid;\n  rim:publicationStatus ex:published.\n\nex:valid a rim:ValidityStatus.\n\nex:published a rim:PublicationStatus.\n\n"
         }
       ]
     }

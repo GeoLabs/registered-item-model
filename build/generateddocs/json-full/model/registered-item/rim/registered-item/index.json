@@ -3,7 +3,7 @@
 {
   "itemIdentifier": "ogc.model.registered-item.rim.registered-item",
   "name": "Registered Item",
-  "highlighted": true,
+  "highlighted": false,
   "group": "Core Model",
   "abstract": "A REGISTER ITEM model with JSON/LD/RDF implementation as defined by ISO/FDIS 19135:2026. This provides a canonical schema for a register entry, that can be extended according the REGISTER ITEM CLASS defined for the register.",
   "status": "under-development",
@@ -15,8 +15,12 @@
     "ogc.model.registered-item.rim.register",
     "ogc.model.registered-item.rim.register-item-class"
   ],
-  "shaclShapes": {},
-  "dateOfLastChange": "2026-10-21",
+  "shaclShapes": {
+    "ogc.model.registered-item.core-ontology": [
+      "https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+    ]
+  },
+  "dateOfLastChange": "2026-10-23",
   "ldContext": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/context.jsonld",
   "ontology": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/registered-item/ontology.ttl",
   "schema": {
@@ -38,8 +42,8 @@
           "language": "turtle",
           "ref": "https://nielshoffmann.github.io/registered-item-model/_sources/rim/registered-item/examples/example.ttl",
           "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/rim/registered-item/example_1_1.ttl",
-          "sizeBytes": 458,
-          "code": "@prefix rim: <https://w3id.org/ogc/rim/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix ex: <https://example.org/rim/>.\n\nex:i a rim:RegisterItem;\n  rim:objectIdentifier <urn:uuid:44444444-4444-4444-8444-444444444444>;\n  rim:functionalIdentifier <https://example.org/items/metre>;\n  rim:itemClass ex:uc;\n  rim:inRegister ex:r;\n  rim:realizes ex:cv;\n  dct:title \"metre\"@en.\n\nex:uc a rim:RegisterItemClass.\nex:r a rim:Register.\nex:cv a rim:ConceptVersion.\n\n"
+          "sizeBytes": 1543,
+          "code": "@prefix rim: <https://w3id.org/ogc/rim/>.\n@prefix dct: <http://purl.org/dc/terms/>.\n@prefix skos: <http://www.w3.org/2004/02/skos/core#>.\n@prefix ex: <https://example.org/rim/>.\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.\n\nex:i a rim:RegisterItem;\n  rim:objectIdentifier \"urn:uuid:44444444-4444-4444-8444-444444444444\"^^xsd:anyURI;\n  rim:functionalIdentifier \"https://example.org/items/metre\"^^xsd:anyURI;\n  rim:itemClass ex:uc;\n  rim:inRegister ex:r;\n  rim:realizes ex:cv;\n  rim:validityStatus ex:valid;\n  rim:publicationStatus ex:published;\n  dct:title \"metre\"@en.\n\nex:uc a rim:RegisterItemClass;\n  rim:objectIdentifier \"urn:uuid:33333333-3333-4333-8333-333333333333\"^^xsd:anyURI;\n  rim:functionalIdentifier \"https://example.org/classes/unit\"^^xsd:anyURI;\n  dct:title \"Unit\"@en;\n  rim:definedIn ex:r;\n  rim:realizes ex:c;\n  rim:validatedBy \"https://example.org/rules/unit\"^^xsd:anyURI.\n\nex:r a rim:Register;\n  rim:objectIdentifier \"urn:uuid:11111111-1111-4111-8111-111111111111\"^^xsd:anyURI;\n  rim:functionalIdentifier \"https://example.org/registers/units\"^^xsd:anyURI;\n  dct:title \"Register of Units\"@en.\n\nex:cv a rim:ConceptVersion;\n  rim:versionOf ex:c;\n  rim:version \"1.0\";\n  rim:objectIdentifier \"urn:uuid:22222222-2222-4222-8222-222222222222\"^^xsd:anyURI;\n  rim:functionalIdentifier \"https://example.org/concepts/metre/1.0\"^^xsd:anyURI;\n  rim:validityStatus ex:valid;\n  rim:publicationStatus ex:published.\n\nex:valid a rim:ValidityStatus .\n\nex:published a rim:PublicationStatus .\n\nex:c a rim:Concept;\n  skos:prefLabel \"metre\"@en ."
         }
       ]
     }

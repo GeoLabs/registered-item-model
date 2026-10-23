@@ -11,8 +11,12 @@
   "dependsOn": [
     "ogc.model.registered-item.rim.register"
   ],
-  "shaclShapes": {},
-  "dateOfLastChange": "2026-10-21",
+  "shaclShapes": {
+    "ogc.model.registered-item.core-ontology": [
+      "https://nielshoffmann.github.io/registered-item-model/_sources/core-ontology/shapes.shacl"
+    ]
+  },
+  "dateOfLastChange": "2026-10-23",
   "ldContext": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/context.jsonld",
   "ontology": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/rim/register-specification/ontology.ttl",
   "schema": {
