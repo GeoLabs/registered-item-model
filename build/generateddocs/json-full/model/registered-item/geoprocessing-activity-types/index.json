@@ -63,7 +63,7 @@
   "sourceLdContext": "https://nielshoffmann.github.io/registered-item-model/_sources/geoprocessing-activity-types/context.jsonld",
   "resolvedSchemaProperties": "https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/resolvedProperties.json",
   "sourceFiles": "https://nielshoffmann.github.io/registered-item-model/_sources/geoprocessing-activity-types/",
-  "validationPassed": false,
+  "validationPassed": true,
   "testOutputs": "https://github.com/NielsHoffmann/registered-item-model/blob/master/build/tests/model/registered-item/geoprocessing-activity-types/",
   "examples": [
     {
@@ -87,20 +87,20 @@
           "language": "json",
           "ref": "https://nielshoffmann.github.io/registered-item-model/_sources/geoprocessing-activity-types/examples/buffer.json",
           "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/geoprocessing-activity-types/example_2_1.json",
-          "sizeBytes": 577,
-          "code": " {\n    \"id\": \"Buffer\",\n    \"title\": \"Create a buffer around a polygon. \",\n    \"description\": \"This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.\",\n    \"version\": \"2.0.0\",\n    \"type\": \"acttype:ActivityType\",\n    \"usedEntityType\" : \"point\",\n    \"generatedEntityType\": \"polygon\",\n    \"associatedAgentType\": \"Geoprocessing library ...\",\n    \"informedByActivityType\": \"none\"\n}"
+          "sizeBytes": 578,
+          "code": " {\n    \"id\": \"Buffer\",\n    \"title\": \"Create a buffer around a polygon. \",\n    \"description\": \"This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.\",\n    \"version\": \"2.0.0\",\n    \"type\": \"rim:RegisterItemClass\",\n    \"usedEntityType\" : \"point\",\n    \"generatedEntityType\": \"polygon\",\n    \"associatedAgentType\": \"Geoprocessing library ...\",\n    \"informedByActivityType\": \"none\"\n}"
         },
         {
           "language": "jsonld",
           "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/geoprocessing-activity-types/example_2_1.jsonld",
-          "sizeBytes": 710,
-          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/context.jsonld\",\n  \"id\": \"Buffer\",\n  \"title\": \"Create a buffer around a polygon. \",\n  \"description\": \"This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.\",\n  \"version\": \"2.0.0\",\n  \"type\": \"acttype:ActivityType\",\n  \"usedEntityType\": \"point\",\n  \"generatedEntityType\": \"polygon\",\n  \"associatedAgentType\": \"Geoprocessing library ...\",\n  \"informedByActivityType\": \"none\"\n}"
+          "sizeBytes": 711,
+          "code": "{\n  \"@context\": \"https://nielshoffmann.github.io/registered-item-model/build/annotated/model/registered-item/geoprocessing-activity-types/context.jsonld\",\n  \"id\": \"Buffer\",\n  \"title\": \"Create a buffer around a polygon. \",\n  \"description\": \"This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.\",\n  \"version\": \"2.0.0\",\n  \"type\": \"rim:RegisterItemClass\",\n  \"usedEntityType\": \"point\",\n  \"generatedEntityType\": \"polygon\",\n  \"associatedAgentType\": \"Geoprocessing library ...\",\n  \"informedByActivityType\": \"none\"\n}"
         },
         {
           "language": "ttl",
           "url": "https://nielshoffmann.github.io/registered-item-model/build/tests/model/registered-item/geoprocessing-activity-types/example_2_1.ttl",
-          "sizeBytes": 839,
-          "code": "@prefix acttype: <https://w3id.org/ogc/rim/activity-type/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n\n<file:///github/workspace/Buffer> a acttype:ActivityType ;\n    dct:description \"This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.\" ;\n    dct:title \"Create a buffer around a polygon. \" ;\n    owl:versionInfo \"2.0.0\" ;\n    acttype:associatedAgentType <file:///github/workspace/> ;\n    acttype:generatedEntityType <file:///github/workspace/polygon> ;\n    acttype:informedByActivityType <file:///github/workspace/none> ;\n    acttype:usedEntityType <file:///github/workspace/point> .\n\n"
+          "sizeBytes": 883,
+          "code": "@prefix acttype: <https://w3id.org/ogc/rim/activity-type/> .\n@prefix dct: <http://purl.org/dc/terms/> .\n@prefix owl: <http://www.w3.org/2002/07/owl#> .\n@prefix rim: <https://w3id.org/ogc/rim/> .\n\n<file:///github/workspace/Buffer> a rim:RegisterItemClass ;\n    dct:description \"This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.\" ;\n    dct:title \"Create a buffer around a polygon. \" ;\n    owl:versionInfo \"2.0.0\" ;\n    acttype:associatedAgentType <file:///github/workspace/> ;\n    acttype:generatedEntityType <file:///github/workspace/polygon> ;\n    acttype:informedByActivityType <file:///github/workspace/none> ;\n    acttype:usedEntityType <file:///github/workspace/point> .\n\n"
         }
       ]
     }

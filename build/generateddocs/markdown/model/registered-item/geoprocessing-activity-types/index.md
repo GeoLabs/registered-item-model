@@ -85,7 +85,7 @@ A buffer geoprocessing activity type
     "title": "Create a buffer around a polygon. ",
     "description": "This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.",
     "version": "2.0.0",
-    "type": "acttype:ActivityType",
+    "type": "rim:RegisterItemClass",
     "usedEntityType" : "point",
     "generatedEntityType": "polygon",
     "associatedAgentType": "Geoprocessing library ...",
@@ -101,7 +101,7 @@ A buffer geoprocessing activity type
   "title": "Create a buffer around a polygon. ",
   "description": "This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry.",
   "version": "2.0.0",
-  "type": "acttype:ActivityType",
+  "type": "rim:RegisterItemClass",
   "usedEntityType": "point",
   "generatedEntityType": "polygon",
   "associatedAgentType": "Geoprocessing library ...",
@@ -114,8 +114,9 @@ A buffer geoprocessing activity type
 @prefix acttype: <https://w3id.org/ogc/rim/activity-type/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rim: <https://w3id.org/ogc/rim/> .
 
-<file:///github/workspace/Buffer> a acttype:ActivityType ;
+<file:///github/workspace/Buffer> a rim:RegisterItemClass ;
     dct:description "This service shall return a feature collection representing the buffer of geometry InputPolygon at distance BufferDistance. The buffer of a geometry at distance d is the Polygon or MultiPolygon which contains all points within a distance d of the geometry." ;
     dct:title "Create a buffer around a polygon. " ;
     owl:versionInfo "2.0.0" ;
